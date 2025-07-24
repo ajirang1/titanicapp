@@ -2,7 +2,7 @@
 import { useState } from 'react'
 
 const fields = [
-  { name: "Pclass", label: "탑승자 등급 (1 = 1st, 2 = 2nd, 3 = 3rd)", type: "number" },
+  { name: "Pclass", label: "탑승자 등급 (1, 2, 3)", type: "number" },
   { name: "Sex", label: "성별", type: "select", options: ["남성", "여성"] },
   { name: "Age", label: "나이", type: "number" },
   { name: "SibSp", label: "같이 탄 배우자, 형제자매 수", type: "number" },
