@@ -35,7 +35,7 @@ export default function PredictPage() {
   const handleSubmit = async () => {
     setLoading(true)
     try {
-      const res = await fetch("https://fluffy-xylophone-6p64qwqp9pphrx4x-8000.app.github.dev/predict", {
+      const res = await fetch("https://titanicapp.onrender.com/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData)
