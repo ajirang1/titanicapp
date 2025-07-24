@@ -39,3 +39,8 @@ def predict(passenger: Passenger):
     # Predict
     prediction = model.predict(df)[0]
     return {"survived": int(prediction)}
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("app:app", host="0.0.0.0", port=10000, reload=True)
